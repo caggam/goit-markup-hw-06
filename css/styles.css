@@ -44,7 +44,8 @@ a {
 
 img {
     display: block;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -805,8 +806,6 @@ border-top: none;
 
 .footer {
     background-color: #2E2F42;
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
     padding-top: 96px;
     padding-bottom: 96px;
 
@@ -815,15 +814,11 @@ border-top: none;
 .d-flex {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: baseline; */
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: baseline; */
-    /* margin-right: 120px; */
     margin-bottom: 72px;
     justify-content: center;
 }
@@ -837,7 +832,6 @@ border-top: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 16px;
-    /* display: inline-block; */
     display: flex;
     align-items: center;
 }
@@ -851,7 +845,6 @@ border-top: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* max-width: 264px; */
     width: 288px;
 }
 
@@ -873,9 +866,7 @@ border-top: none;
     justify-content: center;
 
 }
-
-
-
+ 
 .footer-list {
     display: flex;
     gap: 16px;
@@ -910,15 +901,10 @@ border-top: none;
 }
 
 .footer-form-container {
-    /* display: block; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-    /* margin-left: auto; */
-    /* justify-content: center;
-    align-items: center; */
 }
 
 
@@ -934,13 +920,16 @@ border-top: none;
 .footer-form {
     display: flex;
     flex-direction: column;
-    /* gap: 24px; */
+    align-items: center;
+}
+
+.footer-label {
+    margin-bottom: 16px;
 }
 
 .footer-imput {
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    /* width: 264px; */
     width: 288px;
     height: 40px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -950,7 +939,7 @@ border-top: none;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #ffffff;
-    margin-bottom: 16px;
+    
 }
 
 .footer-imput::placeholder {
@@ -993,6 +982,60 @@ border-top: none;
     background-color: #404BBF;
 }
 
+@media screen and (min-width: 768px) {
+
+.footer {
+    padding: 96px 108px;
+}
+
+.footer-container{
+    display: block;
+}
+
+.footer-soc {
+    margin-left: 0;
+} 
+
+.footer-imput {
+    width: 264px;
+}
+
+.footer-form-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-form {
+    flex-direction: row;
+
+}
+
+.footer-label {
+    margin-bottom: 0;
+    margin-right: 24px;
+}
+
+}
+
+@media screen and (min-width: 1158px) {
+.footer {
+    padding: 100px 15px;
+}
+
+.d-flex {
+    align-items: baseline;
+}
+
+.footer-container {
+    margin-right: 120px;
+}
+
+.footer-form-container {
+    margin-left: auto;
+}
+
+
+}
 
 /* ================== */
 
